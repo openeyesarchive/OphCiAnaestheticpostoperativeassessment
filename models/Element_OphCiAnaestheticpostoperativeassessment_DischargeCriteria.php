@@ -67,7 +67,6 @@ class Element_OphCiAnaestheticpostoperativeassessment_DischargeCriteria extends 
 		// will receive user inputs.
 		return array(
 			array('event_id, pain_score, apvu, mews_score, nausea_vomiting, blood_loss, blood_sugar, ', 'safe'),
-			array('pain_score, apvu, mews_score, nausea_vomiting, blood_loss, blood_sugar, ', 'required'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, event_id, pain_score, apvu, mews_score, nausea_vomiting, blood_loss, blood_sugar, ', 'safe', 'on' => 'search'),

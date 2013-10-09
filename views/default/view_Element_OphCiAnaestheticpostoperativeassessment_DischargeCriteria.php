@@ -24,27 +24,27 @@
 	<tbody>
 		<tr>
 			<td width="30%"><?php echo CHtml::encode($element->getAttributeLabel('pain_score'))?>:</td>
-			<td><span class="big"><?php echo $element->pain_score ? 'Yes' : 'No'?></span></td>
+			<td><span class="big"><?php echo $element->pain_score === null ? 'Not recorded' : ($element->pain_score ? 'Yes' : 'No')?></span></td>
 		</tr>
 		<tr>
 			<td width="30%"><?php echo CHtml::encode($element->getAttributeLabel('apvu'))?>:</td>
-			<td><span class="big"><?php echo $element->apvu ? 'Yes' : 'No'?></span></td>
+			<td><span class="big"><?php echo $element->apvu === null ? 'Not recorded' : ($element->apvu ? 'Yes' : 'No')?></span></td>
 		</tr>
 		<tr>
 			<td width="30%"><?php echo CHtml::encode($element->getAttributeLabel('mews_score'))?>:</td>
-			<td><span class="big"><?php echo $element->mews_score ? 'Yes' : 'No'?></span></td>
+			<td><span class="big"><?php echo $element->mews_score === null ? 'Not recorded' : ($element->mews_score ? 'Yes' : 'No')?></span></td>
 		</tr>
 		<tr>
 			<td width="30%"><?php echo CHtml::encode($element->getAttributeLabel('nausea_vomiting'))?>:</td>
-			<td><span class="big"><?php echo $element->nausea_vomiting ? 'Yes' : 'No'?></span></td>
+			<td><span class="big"><?php echo $element->nausea_vomiting === null ? 'Not recorded' : ($element->nausea_vomiting ? 'Yes' : 'No')?></span></td>
 		</tr>
 		<tr>
 			<td width="30%"><?php echo CHtml::encode($element->getAttributeLabel('blood_loss'))?>:</td>
-			<td><span class="big"><?php echo $element->blood_loss ? 'Yes' : 'No'?></span></td>
+			<td><span class="big"><?php echo $element->blood_loss === null ? 'Not recorded' : ($element->blood_loss ? 'Yes' : 'No')?></span></td>
 		</tr>
 		<tr>
 			<td width="30%"><?php echo CHtml::encode($element->getAttributeLabel('blood_sugar'))?>:</td>
-			<td><span class="big"><?php echo $element->blood_sugar ? 'Yes' : 'No'?></span></td>
+			<td><span class="big"><?php echo $element->blood_loss === null ? 'Not recorded' : ($element->blood_sugar ? 'Yes' : 'No')?></span></td>
 		</tr>
 	</tbody>
 </table>

@@ -25,10 +25,10 @@
 	data-element-display-order="<?php echo $element->elementType->display_order?>">
 	<h4 class="elementTypeName"><?php echo $element->elementType->name; ?></h4>
 
-	<?php echo $form->radioBoolean($element, 'pain_score')?>
-	<?php echo $form->radioBoolean($element, 'apvu')?>
-	<?php echo $form->radioBoolean($element, 'mews_score')?>
-	<?php echo $form->radioBoolean($element, 'nausea_vomiting')?>
-	<?php echo $form->radioBoolean($element, 'blood_loss')?>
-	<?php echo $form->radioBoolean($element, 'blood_sugar')?>
+	<?php echo $form->dropDownList($element, 'pain_score', array(''=>'- Please select -',1=>'Yes',0=>'No'))?>
+	<?php echo $form->dropDownList($element, 'apvu', array(''=>'- Please select -',1=>'Yes',0=>'No'))?>
+	<?php echo $form->dropDownList($element, 'mews_score', array(''=>'- Please select -',1=>'Yes',0=>'No'))?>
+	<?php echo $form->dropDownList($element, 'nausea_vomiting', array(''=>'- Please select -',1=>'Yes',0=>'No'))?>
+	<?php echo $form->dropDownList($element, 'blood_loss', array(''=>'- Please select -',1=>'Yes',0=>'No'))?>
+	<?php echo $form->dropDownList($element, 'blood_sugar', array(''=>'- Please select -',1=>'Yes',0=>'No'))?>
 </div>
