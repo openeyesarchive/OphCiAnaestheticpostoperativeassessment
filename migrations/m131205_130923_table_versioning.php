@@ -80,9 +80,7 @@ CREATE TABLE `et_ophcianaestheticpoassessment_dischargecriteria_version` (
 	public function down()
 	{
 		$this->dropColumn('et_ophcianaestheticpoassessment_anaesthesiasummary','deleted');
-		$this->dropColumn('et_ophcianaestheticpoassessment_anaesthesiasummary_version','deleted');
 		$this->dropColumn('et_ophcianaestheticpoassessment_dischargecriteria','deleted');
-		$this->dropColumn('et_ophcianaestheticpoassessment_dischargecriteria_version','deleted');
 
 		$this->dropTable('et_ophcianaestheticpoassessment_anaesthesiasummary_version');
 		$this->dropTable('et_ophcianaestheticpoassessment_dischargecriteria_version');
