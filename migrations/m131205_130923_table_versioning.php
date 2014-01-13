@@ -8,7 +8,7 @@ class m131205_130923_table_versioning extends CDbMigration
 CREATE TABLE `et_ophcianaestheticpoassessment_anaesthesiasummary_version` (
 	`id` int(10) unsigned NOT NULL AUTO_INCREMENT,
 	`event_id` int(10) unsigned NOT NULL,
-	`description` text COLLATE utf8_bin,
+	`description` text,
 	`last_modified_user_id` int(10) unsigned NOT NULL DEFAULT '1',
 	`last_modified_date` datetime NOT NULL DEFAULT '1901-01-01 00:00:00',
 	`created_user_id` int(10) unsigned NOT NULL DEFAULT '1',
@@ -20,7 +20,7 @@ CREATE TABLE `et_ophcianaestheticpoassessment_anaesthesiasummary_version` (
 	CONSTRAINT `acv_et_ophcianaestheticpoassessment_anaesthesiasummary_lmui_fk` FOREIGN KEY (`last_modified_user_id`) REFERENCES `user` (`id`),
 	CONSTRAINT `acv_et_ophcianaestheticpoassessment_anaesthesiasummary_cui_fk` FOREIGN KEY (`created_user_id`) REFERENCES `user` (`id`),
 	CONSTRAINT `acv_et_ophcianaestheticpoassessment_anaesthesiasummary_ev_fk` FOREIGN KEY (`event_id`) REFERENCES `event` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
 		");
 
 		$this->alterColumn('et_ophcianaestheticpoassessment_anaesthesiasummary_version','id','int(10) unsigned NOT NULL');
@@ -56,7 +56,7 @@ CREATE TABLE `et_ophcianaestheticpoassessment_dischargecriteria_version` (
 	CONSTRAINT `acv_et_ophcianaestheticpoassessment_dischargecriteria_lmui_fk` FOREIGN KEY (`last_modified_user_id`) REFERENCES `user` (`id`),
 	CONSTRAINT `acv_et_ophcianaestheticpoassessment_dischargecriteria_cui_fk` FOREIGN KEY (`created_user_id`) REFERENCES `user` (`id`),
 	CONSTRAINT `acv_et_ophcianaestheticpoassessment_dischargecriteria_ev_fk` FOREIGN KEY (`event_id`) REFERENCES `event` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
 		");
 
 		$this->alterColumn('et_ophcianaestheticpoassessment_dischargecriteria_version','id','int(10) unsigned NOT NULL');
